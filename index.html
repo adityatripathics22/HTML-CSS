@@ -20,11 +20,6 @@
     
 </body>
 <style>
-    .subscribe_button:hover{
-        opacity: 0.6;
-    }    
-    
-    
     .subscribe_button {
         background-color: rgb(163, 7, 7);
         color : white ;
@@ -33,22 +28,12 @@
         width : 100px;
         border-radius: 25px;
         cursor: pointer;margin-right: 10px;
+        transition: opacity 1s;
 
     }
-    .join_button:hover{
-        background-color: rgb(28, 51, 120);
-        /* opacity: 0.5; */
-        color: white;
-        border: none;
-        height: 30px;
-        width: 50px;
+    .subscribe_button:hover{
+        opacity: 0.6;
     }
-    .join_button:active{
-        opacity: 0.5;
-    }   
-    
-
-
     .join_button {
         background-color: white;
         border-color: rgb(46, 46, 217);
@@ -58,8 +43,21 @@
         color: rgb(4, 60, 150);
         border-style: solid;
         cursor: pointer;
+        transition: opacity 1s;
+        transition: 1s;
         
+    }   
+    .join_button:hover{
+        background-color: rgb(28, 51, 120);
+        /* opacity: 0.5; */
+        color: white;
+        border: none;
+        /* height: 30px;
+        width: 50px; */
     }
+    .join_button:active{
+        opacity: 0.5;
+    }   
     .tweet_button{
         background-color: rgb(5, 142, 247);
         border-color: rgb(5, 142, 247);
