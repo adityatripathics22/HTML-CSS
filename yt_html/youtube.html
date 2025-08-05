@@ -1,23 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Youtube.com</title>
     <style>
+        .search_bar{
+            display: block;
+        }
         .thumbnail{
             /* font-size: 50px; 
             -->it dosent work on images
             --->when we set the width the height also adjusts*/
             width: 300px;
+            display: block;
             /*height: 400px;
             object-fit: cover;/*-->object fit covers the area of width*height (conatin)
             object-position: centre;/*after object fit we can set the position of the image(top,bottom,left,right*/
 
         }
-
+        .video_preview{
+            width: 300px;
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
+    <input type="text" placeholder="Search" class = "search_bar">
+    <div class ="video_preview">
     <img class ="thumbnail" src="thumbnails/thumbnail-1.webp">
+    <p class ="video_title">
+        Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class = "video_author">
+        Marques Brownlee
+    </p>
+    <p class = "video_views">
+        3.4M views &#183 6 months ago
+    </p>
+    </div>
+    <div class ="video_preview">
+    <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+    <p class ="video_title">
+        
+    Try Not To Laugh Challenge #9
+    </p>
+    <p class = "video_author">
+        Markiplier
+    </p>
+    <p class = "video_views">
+        19M views &#183 4 years ago
+    </p>
+    </div>
+
+
 
     
 </body>
