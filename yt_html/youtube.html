@@ -31,14 +31,20 @@
             vertical-align: top;
             margin-right: 20px ;
         }
+        .video_info_grid{
+            display: grid;
+            grid-template-columns: 50px 1fr;
+        }
         .channel_picture{
-            display: inline-block;
-            width: 50px;
+            /* display: inline-block;
+            width: 50px; */
             vertical-align: top;
+            background-color: grey;
         }
         .video_info{
-            display: inline-block;
-            width: 200px;
+            /* display: inline-block;
+            width: 250px; */
+            background-color: grey;
         }
         .profile_picture{
             width: 100%;
@@ -72,7 +78,7 @@
         <div class = "thumbnail_row">
             <img class ="thumbnail" src="thumbnails/thumbnail-1.webp">
         </div>
-        <div>
+        <div class="video_info_grid">
             <div class="channel_picture">
                 <img class="profile_picture" src="thumbnails/channel-1.jpeg">
 
@@ -86,6 +92,30 @@
                 </p>
                 <p class = "video_views">
                     1.2M views &#183 2 months ago
+                </p>
+
+            </div>
+            
+        </div>
+    </div>
+    <div class ="video_preview">
+        <div class = "thumbnail_row">
+            <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+        </div>
+        <div class="video_info_grid">
+            <div class="channel_picture">
+                <img class="profile_picture" src="thumbnails/thumbnail-2.webp">
+
+            </div>
+            <div class="video_info">
+                <p class ="video_title">
+                    Try Not To Laugh Challenge #9
+                </p>
+                <p class = "video_author">
+                   Markiplie
+                </p>
+                <p class = "video_views">
+                    19M views &#183 4 years ago
                 </p>
 
             </div>
