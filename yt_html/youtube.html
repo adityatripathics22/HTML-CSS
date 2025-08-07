@@ -14,37 +14,44 @@
         .search_bar{
             display: block;
         }
+
+        .video_grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 16px;
+            row-gap: 40px;
+        }
         .thumbnail{
             /* font-size: 50px; 
             -->it dosent work on images
             --->when we set the width the height also adjusts*/
-            width: 300px;
-            display: block;
+            width: 100%;
+            /* display: block; */
+            
             /*height: 400px;
             object-fit: cover;/*-->object fit covers the area of width*height (conatin)
             object-position: centre;/*after object fit we can set the position of the image(top,bottom,left,right*/
 
         }
-        .video_preview{
+        /* .video_preview{
             width: 300px;
             display: inline-block;
             vertical-align: top;
             margin-right: 20px ;
-        }
+        } */
         .video_info_grid{
             display: grid;
             grid-template-columns: 50px 1fr;
         }
         .channel_picture{
-            /* display: inline-block;
-            width: 50px; */
+            display: inline-block;
+            width: 50px;
             vertical-align: top;
-            background-color: grey;
         }
         .video_info{
             /* display: inline-block;
-            width: 250px; */
-            background-color: grey;
+            width: 250px;
+            background-color: grey; */
         }
         .profile_picture{
             width: 100%;
@@ -74,53 +81,203 @@
 </head>
 <body>
     <input type="text" placeholder="Search" class = "search_bar">
-    <div class ="video_preview">
-        <div class = "thumbnail_row">
-            <img class ="thumbnail" src="thumbnails/thumbnail-1.webp">
-        </div>
-        <div class="video_info_grid">
-            <div class="channel_picture">
-                <img class="profile_picture" src="thumbnails/channel-1.jpeg">
-
+    <div class="video_grid">
+        <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-1.webp">
             </div>
-            <div class="video_info">
-                <p class ="video_title">
-                    How to make a website using HTML and CSS
-                </p>
-                <p class = "video_author">
-                   Aditya Tripathi
-                </p>
-                <p class = "video_views">
-                    1.2M views &#183 2 months ago
-                </p>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-1.jpeg">
 
-            </div>
-            
-        </div>
-    </div>
-    <div class ="video_preview">
-        <div class = "thumbnail_row">
-            <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
-        </div>
-        <div class="video_info_grid">
-            <div class="channel_picture">
-                <img class="profile_picture" src="thumbnails/thumbnail-2.webp">
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        How to make a website using HTML and CSS
+                    </p>
+                    <p class = "video_author">
+                    Aditya Tripathi
+                    </p>
+                    <p class = "video_views">
+                        1.2M views &#183 2 months ago
+                    </p>
 
+                </div>
+                
             </div>
-            <div class="video_info">
-                <p class ="video_title">
-                    Try Not To Laugh Challenge #9
-                </p>
-                <p class = "video_author">
-                   Markiplie
-                </p>
-                <p class = "video_views">
-                    19M views &#183 4 years ago
-                </p>
-
-            </div>
-            
         </div>
+        <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-2.webp">
+            </div>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-2.jpeg">
+
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        Try Not To Laugh Challenge #9
+                    </p>
+                    <p class = "video_author">
+                    Markiplie
+                    </p>
+                    <p class = "video_views">
+                        19M views &#183 4 years ago
+                    </p>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-3.webp">
+            </div>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-3.jpeg">
+
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        Crazy Tik Toks Taken Moments Before DISASTER
+                    </p>
+                    <p class = "video_author">
+                    SSSniperWolf
+                    </p>
+                    <p class = "video_views">
+                        12M views · 1 year ago
+                    </p>
+
+                </div>
+                
+            </div>
+        </div>
+        <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-4.webp">
+            </div>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-4.jpeg">
+
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        The Simplest Math Problem No One Can Solve - Collatz Conjecture
+                    </p>
+                    <p class = "video_author">
+                        Veritasium
+                    </p>
+                    <p class = "video_views">
+                        18M views · 4 months ago
+                    </p>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-5.webp">
+            </div>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-5.jpeg">
+
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        Kadane's Algorithm to Maximum Sum Subarray Problem
+                    </p>
+                    <p class = "video_author">
+                        CS Dojo
+                    </p>
+                    <p class = "video_views">
+                        519K views · 5 years ago
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+         <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-6.webp">
+            </div>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-6.jpeg">
+
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        Anything You Can Fit In The Circle I’ll Pay For
+                    </p>
+                    <p class = "video_author">
+                        MrBeast
+                    </p>
+                    <p class = "video_views">
+                        141M views · 1 year ago
+                    </p>
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-7.webp">
+            </div>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-7.jpeg">
+
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        Why Planes Don't Fly Over Tibet
+                    </p>
+                    <p class = "video_author">
+                        RealLifeLore
+                    </p>
+                    <p class = "video_views">
+                        6.6M views · 1 year ago
+
+                </div>
+                
+            </div>
+        </div>
+
+        <div class ="video_preview">
+            <div class = "thumbnail_row">
+                <img class ="thumbnail" src="thumbnails/thumbnail-8.webp">
+            </div>
+            <div class="video_info_grid">
+                <div class="channel_picture">
+                    <img class="profile_picture" src="profile_pics/channel-8.jpeg">
+
+                </div>
+                <div class="video_info">
+                    <p class ="video_title">
+                        Inside The World's Biggest Passenger Plane
+                    </p>
+                    <p class = "video_author">
+                        Tech Vision
+                    </p>
+                    <p class = "video_views">
+                        3.7M views · 10 months ago
+                    </p>
+
+                </div>
+                
+            </div>
+        </div>
+        
     </div>
     
     <!-- <div class ="video_preview">
