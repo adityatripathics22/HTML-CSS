@@ -6,9 +6,38 @@
     <title>Document</title>
 </head>
 <body>
-    <div>
+    <div style=" display: grid;
+        grid-template-columns: 100px  100px ;">
+        <div style="background-color: blue;"> div1 </div>
+        <div style="background-color: pink;"> div2 <p>text</p> </div>
+
+    </div>
+
+    <div style=" display: grid;
+        margin-top: 10px;
+        grid-template-columns: 100px  100px 200px;">
+        <div style="background-color: blue;"> div1 </div>
+        <div style="background-color: pink;"> div2 <p>text</p> </div>
+        <div style="background-color: rgb(137, 22, 41);"> div2 </div>
+        <div style="background-color: rgb(115, 255, 0);"> div1 </div>
+        <div style="background-color: rgb(255, 192, 248);"> div2 <p>text</p> </div>
+        <div style="background-color: rgb(137, 68, 22);"> div2 </div>
+
+    </div>
+
+    <div style=" display: grid;
+    margin-top: 10px;
+        grid-template-columns: 100px  1fr ;">
         <div style="background-color: blue;"> div1 </div>
         <div style="background-color: pink;"> div2 </div>
+
+    </div>
+    <div style=" display: grid;
+    margin-top: 10px;
+        grid-template-columns: 100px  1fr 1fr ;">
+        <div style="background-color: blue;"> div1 </div>
+        <div style="background-color: pink;"> div2 </div>
+        <div style="background-color: blue;"> div1 </div>
 
     </div>
     
