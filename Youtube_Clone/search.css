@@ -1,31 +1,116 @@
 /* .search_bar{
     display: block;
 } */
- .header{
-    height: 55px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
- }
+.header{
+   height: 55px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   
+}
 
- .left_section{
-    background-color: lightblue;
-    width: 100px;
+.left_section{
+   /* background-color: lightblue; */
+   /* width: 150px; */
+   display: flex;
+   align-items: center;
 
- }
+}
 
- .middle_section{
-    background-color: lightpink;
-    flex: 1;
-    margin-left: 70px;
-    margin-right: 35px;
-    max-width: 500px;
+.hamburger-menu{
+   height: 20px;
+   margin-left: 24px;
+   margin-right: 20px;
+   background-color: white;
+}
 
+.youtube-logo{
+   height: 20px;
+}
 
- }
+.middle_section{
+   /* background-color: lightpink; */
+   flex: 1;
+   margin-left: 70px;
+   margin-right: 35px;
+   max-width: 500px;
+   display: flex;
+   align-items: center;
+}
+
+.search_bar{
+   flex: 1;
+   height: 34px;
+   padding-left: 12px;
+   font-size: 16px;
+   border-width: 1px;
+   border-style: solid;
+   border-color: rgb(203, 196, 196);
+   border-radius: 3px;
+   box-shadow: inset 1px 2px  4px rgba(0 , 0  ,0 , 0.05);
+   width: 0;
+}
+
+.search_bar::placeholder{
+   font-family: Roboto ,Arial;
+   font-size: 16px;
+}
+
+.search-button{
+   height: 40px;
+   width: 66px;
+   background-color: rgb(235, 234, 234);
+   border-width: 1px;
+   border-style: solid;
+   border-color: rgb(192 , 192 , 192);
+   margin-left: -1px;
+   margin-right: 8px;
+}
+
+.voice-search-icon{
+   height: 24px;
+   margin-top: 4px; 
+
+}
+
+.search-icon{
+   height: 25px;
+}
+
+.voice-search-button{
+   height: 40px;
+   width: 40px;
+   border-radius: 20px ;
+   border: none;
+   background-color: rgb(246, 246, 246);
+
+}
+
 .right_section{
-    background-color: lightcoral;
-    width: 200px;
+   /* background-color: lightcoral; */
+   width: 180px;
+   margin-right: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-shrink: 0;
+   
 
  }
+
+.upload{
+    height: 24px;
+}
+
+.youtube-apps{
+    height: 24px;
+}
+
+.notifications{
+    height: 24px;
+}
+
+.channel_pic{
+   height: 32px;
+   border-radius: 16px;
+}
