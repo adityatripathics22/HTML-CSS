@@ -15,9 +15,12 @@
         top: 0px;
         left: 0px;
         right: 0px;
-        height: 50px;"> 
+        height: 50px;
+        z-index: 1;"> 
         header
     </div>
+    <!-- z-index is used to set the priority of the element 
+    higher the zindex higher the priority -->
 
     <div style="
         background-color: greenyellow;
@@ -27,13 +30,21 @@
         bottom: 0;
         width: 72px;">
         sidebar
+        <div style="position: absolute;
+            background-color: red;
+            color: white;
+            left: 10;
+            top: 30px;
+            ">
+            absolute
+        </div>
     </div>
 
     <div style="position: absolute;
     background-color: red;
     color: white;
-    left: 10;
-    top: 10px;
+    left: 700px;
+    top: 50px;
     ">
         absolute
     </div>
@@ -41,7 +52,9 @@
     <!-- absolute is same as fixed just the difference is 
     absolute is placed on the page which moves up and 
     down while fixed in placed on browser window 
-    which dosent moves -->
+    which dosent moves
+    or can say absolute element is placed relative to 
+    the parent element -->
 
     <!-- if you want your container to resize with the window
     then use bottom else if you want a fixed height or any paraameter
@@ -54,12 +67,24 @@
     " >
         div 1
     </div>
+
     <div style="
     background-color: lightpink;
     height: 200px;
-    width: 200px;">
-        div 2
+    width: 200px; 
+    position: relative;">
+        hyyyyy
+        <div style="position: absolute;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        left: 160px;
+        top: 170px;
+        ">
+            5:00
+        </div>
     </div>
+
+    
     
 </body>
 </html>
